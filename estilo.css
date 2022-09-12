@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(189, 189, 255);
+}
+.logo{
+    background: linear-gradient(45deg, rgb(118, 118, 235), rgb(38, 0, 255), rgb(143, 142, 221));
+    text-align: center;
+
+}
+.logo_img{
+    height: 100px;
+}
+.menu{
+    align-content: center;
+}
+a{
+    color: rgb(239, 242, 245);
+    margin-left: 30px;
+}
+h1{
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    margin-top: 20px;
+}
+p{
+    font-family: 'Sarabun', sans-serif;
+    margin-top: 30px;
+}
+nav{
+    background-color: rgb(18, 48, 75);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+footer{
+    background-color: rgb(18, 48, 75);
+    margin-top: 30px;
+    padding: 20px;
+}
+.footer_list{
+    list-style: disc;
+    color: rgb(255, 255, 255);
+}
+.table{
+    background-color: aliceblue;
+    margin:0 auto;
+}
+.img_actividades{
+    width: 250px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form{
+    display: inline-block; 
+    margin-left: 50px;
+    border: 2px rgb(0, 0, 0) solid;
+    padding: 15px;
+}
+/*INICIO GRID INDEX*/
+.gridContainer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 4fr;
+    gap: 10px;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "p p p p"
+    "img1 img2 img3 img4";
+}
+.h1Grid2{
+    grid-area: h1;
+}
+.textoGrid2{
+    grid-area: p;
+    margin: auto;
+}
+.img1Grid2{
+    grid-area: img1;
+    width: 250px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.img2Grid2{
+    grid-area: img2;
+    width: 250px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.img3Grid2{
+    grid-area: img3;
+    width: 250px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.img4Grid2{
+    grid-area: img4;
+    width: 250px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+/*FIN GRID INDEX*/
+.presentacion{
+    text-align: center;
+}
+.button{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.boton1:hover{
+    transform: scale(1.1, 1.1);
+}
+.boton1{
+    text-align: center;
+    margin: 0px;
+    background-color: green;
+    color: aliceblue;
+    padding: 10px;
+    }
+/*INICIO GRID ACTIVIDADES*/
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "bodypump funcional spinning";
+    }
+.cardPump{
+    grid-area: bodypump;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cardFuncional{
+    grid-area: funcional;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cardSpinning{
+    grid-area: spinning;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.tituloBodypump{
+    margin-bottom: 20px;
+}
+.tituloFuncional{
+    margin-bottom: 20px;
+}
+.tituloSpinning{
+    margin-bottom: 20px;
+}
+.img1{
+    grid-area: img1;
+    width: 250px;
+    margin: auto;
+}
+.img2{
+    width: 250px;
+    margin-top: 20px;
+    margin: auto;
+}
+.img3{
+    width: 250px;
+    margin-top: 20px;
+    margin: auto;
+}
+.detalle1{
+    text-align: center;
+    margin: 15px;
+}
+.detalle2{
+    text-align: center;
+    margin: 15px;
+}
+.detalle3{
+    text-align: center;
+    margin: 15px;
+}
+/*FIN GRID ACTIVIDADES*/
+.mainPrecios {
+    height: 350px;
+}
+.mainNosotros {
+    height: 350px;
+}
+.mainContacto {
+    height: 350px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px){
+    .gridContainer2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.7fr 1fr 4fr 4fr;
+        grid-template-areas: 
+        "h1 h1"
+        "p p"
+        "img1 img2" 
+        "img3 img4";
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "bodypump" 
+        "funcional" 
+        "spinning";
+        }
+
+}
+@media screen and (max-width: 480px){
+    .gridContainer2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 1fr 4fr 4fr 4fr 4fr;
+        grid-template-areas: 
+        "h1"
+        "p"
+        "img1" 
+        "img2" 
+        "img3" 
+        "img4";
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "bodypump" 
+        "funcional" 
+        "spinning";
+        }
+
+}
