@@ -217,15 +217,7 @@ footer{
     margin: 15px;
 }
 /*FIN GRID ACTIVIDADES*/
-.img1:hover{
-    transform: scale(1.1, 1.1)
-}
-.img2:hover{
-    transform: scale(1.1, 1.1)
-}
-.img3:hover{
-    transform: scale(1.1, 1.1)
-}
+
 .mainPrecios {
     height: 350px;
 }
