@@ -29,11 +29,6 @@ p{
     font-family: 'Sarabun', sans-serif;
     margin-top: 30px;
 }
-nav{
-    background-color: rgb(18, 48, 75);
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
 nav ul{
     display: flex;
     justify-content: center;
@@ -57,12 +52,6 @@ footer{
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.form{
-    display: inline-block; 
-    margin-left: 50px;
-    border: 2px rgb(0, 0, 0) solid;
-    padding: 15px;
 }
 /*INICIO GRID INDEX*/
 .gridContainer2{
@@ -147,85 +136,14 @@ footer{
 .img4Grid2:hover{
     transform: scale(1.1, 1.1)
 }
-/*INICIO GRID ACTIVIDADES*/
-.gridContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    grid-template-areas: 
-    "bodypump funcional spinning";
-    }
-.cardPump{
-    grid-area: bodypump;
-    width: 250px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.cardFuncional{
-    grid-area: funcional;
-    width: 250px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.cardSpinning{
-    grid-area: spinning;
-    width: 250px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.tituloBodypump{
-    margin-bottom: 20px;
-}
-.tituloFuncional{
-    margin-bottom: 20px;
-}
-.tituloSpinning{
-    margin-bottom: 20px;
-}
-.img1{
-    grid-area: img1;
-    width: 250px;
-    margin: auto;
-}
-.img2{
-    width: 250px;
-    margin-top: 20px;
-    margin: auto;
-}
-.img3{
-    width: 250px;
-    margin-top: 20px;
-    margin: auto;
-}
-.detalle1{
-    text-align: center;
-    margin: 15px;
-}
-.detalle2{
-    text-align: center;
-    margin: 15px;
-}
-.detalle3{
-    text-align: center;
-    margin: 15px;
-}
-/*FIN GRID ACTIVIDADES*/
-
 .mainPrecios {
-    height: 350px;
+    height: auto;
 }
 .mainNosotros {
-    height: 350px;
+    height: auto;
 }
 .mainContacto {
-    height: 350px;
+    height: auto;
 }
 
 /*MEDIA QUERIES*/
