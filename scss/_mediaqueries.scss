@@ -1,0 +1,26 @@
+@media screen and (max-width: 992px){
+    .gridContainer2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.7fr 1fr 4fr 4fr;
+        grid-template-areas: 
+        "h1 h1"
+        "p p"
+        "img1 img2" 
+        "img3 img4";
+    }
+
+}
+@media screen and (max-width: 480px){
+    .gridContainer2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 1fr 4fr 4fr 4fr 4fr;
+        grid-template-areas: 
+        "h1"
+        "p"
+        "img1" 
+        "img2" 
+        "img3" 
+        "img4";
+    }
+
+}

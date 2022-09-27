@@ -1,0 +1,163 @@
+.logo {
+  background: linear-gradient(45deg, rgb(118, 118, 235), rgb(38, 0, 255), rgb(143, 142, 221));
+  text-align: center;
+}
+
+.logo_img {
+  height: 100px;
+}
+
+body {
+  background-color: rgb(189, 189, 255);
+}
+
+h1 {
+  font-family: "Baloo 2", cursive;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-family: "Sarabun", sans-serif;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.img_actividades {
+  width: 250px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*INICIO GRID INDEX*/
+.gridContainer2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 1fr 4fr;
+  gap: 10px;
+  grid-template-areas: "h1 h1 h1 h1" "p p p p" "img1 img2 img3 img4";
+}
+
+.presentacion {
+  text-align: center;
+}
+
+.button {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.boton1 {
+  text-align: center;
+  text-decoration: none;
+  margin: 0px;
+  background-color: rgb(27, 71, 217);
+  color: aliceblue;
+  padding: 12px;
+}
+.boton1:hover {
+  transform: scale(1.1, 1.1);
+  color: aliceblue;
+}
+
+.h1Grid2 {
+  grid-area: h1;
+}
+
+.textoGrid2 {
+  grid-area: p;
+  margin: auto;
+}
+
+.img1Grid2 {
+  grid-area: img1;
+  width: 250px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+.img1Grid2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.img2Grid2 {
+  grid-area: img2;
+  width: 250px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+.img2Grid2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.img3Grid2 {
+  grid-area: img3;
+  width: 250px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+.img3Grid2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.img4Grid2 {
+  grid-area: img4;
+  width: 250px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+.img4Grid2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.mapa {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table {
+  background-color: aliceblue;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: rgb(18, 48, 75);
+  margin-top: 30px;
+  padding: 20px;
+}
+footer .footer_list {
+  list-style: disc;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 992px) {
+  .gridContainer2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 4fr 4fr;
+    grid-template-areas: "h1 h1" "p p" "img1 img2" "img3 img4";
+  }
+}
+@media screen and (max-width: 480px) {
+  .gridContainer2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1fr 4fr 4fr 4fr 4fr;
+    grid-template-areas: "h1" "p" "img1" "img2" "img3" "img4";
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
