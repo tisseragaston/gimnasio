@@ -126,11 +126,31 @@ p {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
 }
 
 .table {
   background-color: aliceblue;
   margin: 0 auto;
+}
+
+/*INICIO GRID TESTIMONIOS*/
+.grid_testimonios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  grid-template-areas: "video1 video2";
+}
+
+.testimonio1 {
+  grid-area: video1;
+  margin: auto;
+}
+
+.testimonio2 {
+  grid-area: video2;
+  margin: auto;
 }
 
 footer {
@@ -148,6 +168,13 @@ footer .footer_list {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.7fr 1fr 4fr 4fr;
     grid-template-areas: "h1 h1" "p p" "img1 img2" "img3 img4";
+  }
+  .grid_testimonios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: "video1" "video2";
   }
 }
 @media screen and (max-width: 480px) {

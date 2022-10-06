@@ -8,6 +8,15 @@
         "img1 img2" 
         "img3 img4";
     }
+    .grid_testimonios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "video1"
+        "video2" 
+    }
 
 }
 @media screen and (max-width: 480px){
