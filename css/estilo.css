@@ -129,6 +129,10 @@ p {
   margin-top: 100px;
 }
 
+.map_container {
+  height: 500px;
+}
+
 .table {
   background-color: aliceblue;
   margin: 0 auto;
